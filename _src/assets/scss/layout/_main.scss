@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem 4.5rem 1.5rem;
+
+  &__small {
+    font-family: $fontText;
+    font-size: 1.4rem;
+    color: #8ccbea;
+  }
+
+  &__h2 {
+    font-family: $titleText;
+    font-size: 2.4rem;
+    color: black;
+    padding: 1rem 0 1.5rem 0;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+
+  &__p {
+    font-family: $fontText;
+    font-size: 1.8rem;
+    line-height: 3rem;
+
+  }
+  &__button{
+      
+  }
+}
