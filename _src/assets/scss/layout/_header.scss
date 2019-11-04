@@ -65,47 +65,32 @@
 @media all and (min-width:768px) {
   .header__text {
     padding: 3.9rem 4.5rem 3.9rem;
-  }
 
-  .header__text__h1 {
-    font-size: 8rem;
+    &__h1 {
+      font-size: 8rem;
 
-  }
-
-  .header__text__h2 {
-    font-size: 2.4rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-  }
-}
-
-@media all and(min-width:1024px) {
-  .header__text{
-    padding-bottom:1.3rem;
-    &__h1{
-      font-size: 10rem;
-      max-width: 73rem;
     }
-    &__h2{
+
+    &__h2 {
       font-size: 2.4rem;
+      padding-top: 2rem;
       padding-bottom: 3rem;
     }
   }
 }
 
-// @media all and (min-width:1024px) {
-//   .header__text {
-//     padding-bottom: 1.3rem;
-//   }
+@media all and(min-width:1024px) {
+  .header__text {
+    padding-bottom: 1.3rem;
 
-//   .header__text__h1 {
-//     font-size: 10rem;
-//     max-width: 73rem;
+    &__h1 {
+      font-size: 10rem;
+      max-width: 73rem;
+    }
 
-//   }
-
-//   .header__text__h2 {
-//     font-size: 2.4rem;
-//     padding: 0rem 3rem;
-//   }
-// }
+    &__h2 {
+      font-size: 2.4rem;
+      padding-bottom: 3rem;
+    }
+  }
+}

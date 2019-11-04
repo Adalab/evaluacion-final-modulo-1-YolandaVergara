@@ -19,7 +19,8 @@
 
   &__reasons {
     margin-bottom: 4.5rem;
-    line-height: 3rem;;
+    line-height: 3rem;
+    ;
 
     &__h3 {
       font-size: 1.8rem;
@@ -78,7 +79,8 @@
         font-size: 2rem;
       }
     }
-    &__button{
+
+    &__button {
       width: 21rem;
     }
 
@@ -88,7 +90,8 @@
 @media all and (min-width:1024px) {
   .section {
     padding: 6rem 8.5rem;
-    &__h2{
+
+    &__h2 {
       font-size: 3.2rem;
     }
 
@@ -99,7 +102,8 @@
       margin-bottom: 6rem;
 
     }
-    &__button{
+
+    &__button {
       width: 25.5rem;
     }
 
