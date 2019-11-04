@@ -1,0 +1,58 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #304268;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-family: $fontText;
+  padding: 0rem 1.5rem 4.5rem 1.5rem;
+
+  &__link {
+    width: 4.5rem;
+    height: 4.5rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.25rem;
+    transform: translateY(-50%);
+
+    &__arrow {
+      color: $buttonColor;
+    }
+
+  }
+
+  &__menu,
+  &__networks {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 3rem;
+
+
+  }
+
+  &__menu {
+    padding-top: 3.7rem;
+    line-height: 3rem;
+  }
+
+  &__networks {
+    padding: 3rem 8.6rem;
+  }
+
+  &__copy {
+    font-size: 1.4rem;
+    &__text{
+        height: 3rem;
+
+    }
+
+    &__heart {
+      color: $buttonColor;
+    }
+  }
+
+}
