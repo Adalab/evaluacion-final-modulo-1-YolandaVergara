@@ -7,7 +7,7 @@
   color: white;
   text-align: center;
   font-family: $fontText;
-  padding: 0rem 8.7rem 4.5rem 8.7rem;
+  padding: 0rem 1.5rem 4.5rem 1.5rem;
 
   &__up {
     width: 4.5rem;
@@ -38,13 +38,13 @@
     }
 
     &__menu {
-      padding-top: 3.7rem;
+      padding-top: 1.7rem;
       line-height: 3rem;
 
     }
 
     &__networks {
-      padding: 3rem 8.6rem;
+      padding: 3rem 0rem;
     }
 
     &__copy {
@@ -76,7 +76,7 @@
       &__menu {
         order: 2;
         width: 21rem;
-        padding: 0;
+        padding: 0 3rem;
       }
 
       &__networks {
@@ -87,7 +87,6 @@
 
       &__copy {
         width: 21rem;
-        padding-right: 3rem;
         order: 3;
       }
     }
@@ -96,6 +95,12 @@
 
 @media all and(min-width:1024px) {
   .footer {
-    padding: 0rem 37rem 4.5rem 37rem;
+    padding: 0rem auto 4.5rem auto;
   }
+  &__menu,
+  &__networks,
+  &__copy{
+    width:15.9rem;
+  }
+
 }
