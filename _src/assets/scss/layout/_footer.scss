@@ -54,6 +54,10 @@
         height: 3rem;
       }
 
+      &__we {
+        text-transform: lowercase;
+      }
+
       &__heart {
         color: $buttonColor;
       }
@@ -97,10 +101,11 @@
   .footer {
     padding: 0rem auto 4.5rem auto;
   }
+
   &__menu,
   &__networks,
-  &__copy{
-    width:15.9rem;
+  &__copy {
+    width: 15.9rem;
   }
 
 }
