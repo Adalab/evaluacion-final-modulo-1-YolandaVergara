@@ -6,6 +6,7 @@
   &__h2 {
     font-size: 2.4rem;
     text-transform: capitalize;
+    font-family: $titleText;
 
   }
 
@@ -45,5 +46,54 @@
       font-size: 2rem;
       font-family: $fontText;
     }
+  }
+}
+
+@media all and (min-width:768px) {
+  .section {
+    padding: 3rem 4rem 6rem 3.57rem;
+
+    &__h2 {
+      font-size: 2.6rem;
+      padding-bottom: 4.5rem;
+    }
+
+    &__grid {
+      display: grid;
+      padding: 0;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2.77rem;
+
+    }
+
+    &__reasons {
+      &__h3 {
+        font-size: 2.4rem;
+        padding-bottom: 1.4rem;
+      }
+
+      &__p {
+        font-size: 2rem;
+      }
+    }
+
+  }
+}
+
+@media all and (min-width:1024px) {
+  .section {
+    padding: 6rem 8.5rem;
+    &__h2{
+      font-size: 3.2rem;
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+
   }
 }
