@@ -24,10 +24,10 @@
     line-height: 3rem;
   }
 
-  &__a {
-    border: #f26002 2px solid;
+  &__button {
+    border: $buttonColor 2px solid;
     background-color: white;
-    color: #f26002;
+    color: $buttonColor;
     width: 7.6rem;
     height: 4.5rem;
     font-size: 2rem;
