@@ -9,7 +9,7 @@
   font-family: $fontText;
   padding: 0rem 1.5rem 4.5rem 1.5rem;
 
-  &__link {
+  &__up {
     width: 4.5rem;
     height: 4.5rem;
     background: white;
@@ -22,37 +22,73 @@
     &__arrow {
       color: $buttonColor;
     }
-
   }
 
-  &__menu,
-  &__networks {
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    line-height: 3rem;
+  &__links {
+    &__menu,
+    &__networks {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      line-height: 3rem;
+    }
 
+    &__menu {
+      padding-top: 3.7rem;
+      line-height: 3rem;
+      text-align: left;
+    }
 
-  }
+    &__networks {
+      padding: 3rem 8.6rem;
+      text-align: left;
+    }
 
-  &__menu {
-    padding-top: 3.7rem;
-    line-height: 3rem;
-  }
+    &__copy {
+      text-align: left;
+      font-size: 1.4rem;
 
-  &__networks {
-    padding: 3rem 8.6rem;
-  }
-
-  &__copy {
-    font-size: 1.4rem;
-    &__text{
+      &__text {
         height: 3rem;
+      }
 
-    }
-
-    &__heart {
-      color: $buttonColor;
+      &__heart {
+        color: $buttonColor;
+      }
     }
   }
+}
 
+@media all and(min-width:768px) {
+  .footer {
+    padding: 0rem;
+
+    &__links {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      &__menu {
+        order: 2;
+        width: 21rem;
+        padding: 0;
+      }
+      &__networks {
+        order: 1;
+        padding: 0;
+        width: 21rem;
+      }
+      &__copy {
+        width: 21rem;
+        padding-right: 3rem;
+        order: 3;
+      }
+    }
+  }
+}
+
+@media all and(min-width:1024px) {
+  .footer {
+    padding: 0rem 37rem 4.5rem 37rem;
+  }
 }
