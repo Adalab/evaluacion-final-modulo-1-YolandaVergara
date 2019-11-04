@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem 4.5rem 1.5rem;
+
+  &__small {
+    font-family: $fontText;
+    color: #8ccbea;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+  }
+
+  &__h2 {
+    font-family: $titleText;
+    color: black;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+  }
+
+  &__p {
+    font-family: $fontText;
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  &__a {
+    border: #f26002 2px solid;
+    background-color: white;
+    color: #f26002;
+    width: 7.6rem;
+    height: 4.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.25rem;
+    margin-top: 30px;
+  }
+}
