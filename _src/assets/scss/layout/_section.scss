@@ -2,10 +2,12 @@
   background: #eff9ff;
   text-align: center;
   padding: 3rem 1.5rem 6rem 1.5rem;
+
   @media all and (min-width:768px) {
     padding: 3rem 4rem 6rem 3.57rem;
   }
-  @media all and (min-width:1024px) {
+
+  @media all and (min-width:1280px) {
     padding: 6rem 8.5rem;
   }
 
@@ -13,11 +15,14 @@
     font-size: 2.4rem;
     text-transform: capitalize;
     font-family: $titleText;
+    font-weight: bold;
+
     @media all and (min-width:768px) {
       font-size: 2.6rem;
       padding-bottom: 4.5rem;
     }
-    @media all and (min-width:1024px) {
+
+    @media all and (min-width:1280px) {
       font-size: 3.2rem;
     }
   }
@@ -27,28 +32,32 @@
     grid-template: repeat(3, 1fr) / 1fr;
     font-family: $titleText;
     padding: 4.5rem 5.5rem;
+
     @media all and (min-width:768px) {
       display: grid;
       padding: 0;
       grid-template-rows: 1fr;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 2.77rem;
+      grid-gap: 2.62rem;
     }
-    @media all and (min-width:1024px) {
+
+    @media all and (min-width:1280px) {
       display: grid;
       grid-template-rows: 11.2rem;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 35rem);
       margin-bottom: 6rem;
     }
   }
 
   &__reasons {
     margin-bottom: 4.5rem;
-    line-height: 3rem;    
+    line-height: 3rem;
 
     &__h3 {
       font-size: 1.8rem;
       font-family: $titleText;
+      font-weight: bold;
+
       @media all and (min-width:768px) {
         font-size: 2.4rem;
         padding-bottom: 1.4rem;
@@ -58,33 +67,10 @@
     &__p {
       font-size: 1.8rem;
       font-family: $fontText;
+
       @media all and (min-width:768px) {
         font-size: 2rem;
       }
     }
   }
-
-  &__button {
-    width: 18.4rem;
-    height: 4.5rem;
-    background: $buttonColor;
-    border-radius: 2.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    @media all and (min-width:768px) {
-      width: 21rem;
-    }
-    @media all and (min-width:1024px) {
-      width: 25.5rem;
-    }
-
-    &--text {
-      color: white;
-      font-size: 2rem;
-      font-family: $fontText;
-    }
-  }
 }
-
