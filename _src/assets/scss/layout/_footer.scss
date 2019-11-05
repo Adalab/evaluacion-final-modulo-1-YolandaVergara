@@ -9,6 +9,14 @@
   font-family: $fontText;
   padding: 0rem 1.5rem 4.5rem 1.5rem;
 
+  @media all and(min-width:768px) {
+    padding: 0.1rem 3.9rem 4.5rem 3.9rem;
+  }
+
+  @media all and(min-width:1024px) {
+    padding: 0rem auto 4.5rem auto;
+  }
+
   &__up {
     width: 4.5rem;
     height: 4.5rem;
@@ -30,6 +38,14 @@
     justify-content: center;
     text-align: center;
 
+    @media all and(min-width:768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: space-between;
+      text-align: left;
+    }
+
     &__menu,
     &__networks {
       text-transform: uppercase;
@@ -41,14 +57,32 @@
       padding-top: 1.7rem;
       line-height: 3rem;
 
+      @media all and(min-width:768px) {
+        order: 2;
+        width: 21rem;
+        padding: 0 3rem;
+      }
+
     }
 
     &__networks {
       padding: 3rem 0rem;
+
+      @media all and(min-width:768px) {
+        order: 1;
+        padding: 0;
+        width: 21rem;
+      }
     }
 
     &__copy {
       font-size: 1.4rem;
+
+      @media all and(min-width:768px) {
+        width: 21rem;
+        order: 3;
+
+      }
 
       &__text {
         height: 3rem;
@@ -62,50 +96,13 @@
         color: $buttonColor;
       }
     }
-  }
 
-}
-
-@media all and(min-width:768px) {
-  .footer {
-    padding: 0.1rem 3.9rem 4.5rem 3.9rem;
-
-    &__links {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: flex-start;
-      justify-content: space-between;
-      text-align: left;
-
-      &__menu {
-        order: 2;
-        width: 21rem;
-        padding: 0 3rem;
-      }
-
-      &__networks {
-        order: 1;
-        padding: 0;
-        width: 21rem;
-      }
-
+    @media all and(min-width:1024px) {
+      &__menu,
+      &__networks,
       &__copy {
-        width: 21rem;
-        order: 3;
+        width: 15.9rem;
       }
     }
   }
-}
-
-@media all and(min-width:1024px) {
-  .footer {
-    padding: 0rem auto 4.5rem auto;
-  }
-
-  &__menu,
-  &__networks,
-  &__copy {
-    width: 15.9rem;
-  }
-
 }

@@ -8,7 +8,6 @@
 
 
   &__menu {
-
     background-color: #0271bc;
     width: 4.4rem;
     height: 4.4rem;
@@ -21,7 +20,6 @@
   }
 
   &__text {
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -30,22 +28,41 @@
     height: 100vh;
     color: $textColor;
     padding: 0rem 1.5rem 5.3rem 1.5rem;
+    @media all and (min-width:768px) {
+      padding: 3.9rem 4.5rem 3.9rem;
+    }
+    @media all and(min-width:1024px) {
+      padding-bottom: 1.3rem;
+    }
 
     &__h1 {
       font-family: $titleText;
       text-transform: uppercase;
       font-size: 42px;
       text-align: center;
-
-
+      @media all and (min-width:768px) {
+        font-size: 8rem;
+      }
+      @media all and(min-width:1024px) {
+        font-size: 10rem;
+        max-width: 73rem;
+      }
     }
 
     &__h2 {
-
       font-family: $fontText;
       font-size: 1.6rem;
       text-align: center;
       padding: 1rem 0rem 4.5rem 0rem;
+      @media all and (min-width:768px) {
+        font-size: 2.4rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+      }
+      @media all and(min-width:1024px) {
+        font-size: 2.4rem;
+        padding-bottom: 3rem;
+      }
     }
 
     &__link {
@@ -62,35 +79,4 @@
   }
 }
 
-@media all and (min-width:768px) {
-  .header__text {
-    padding: 3.9rem 4.5rem 3.9rem;
 
-    &__h1 {
-      font-size: 8rem;
-
-    }
-
-    &__h2 {
-      font-size: 2.4rem;
-      padding-top: 2rem;
-      padding-bottom: 3rem;
-    }
-  }
-}
-
-@media all and(min-width:1024px) {
-  .header__text {
-    padding-bottom: 1.3rem;
-
-    &__h1 {
-      font-size: 10rem;
-      max-width: 73rem;
-    }
-
-    &__h2 {
-      font-size: 2.4rem;
-      padding-bottom: 3rem;
-    }
-  }
-}
