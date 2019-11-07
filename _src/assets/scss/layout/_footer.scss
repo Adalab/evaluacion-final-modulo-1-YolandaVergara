@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #304268;
+  background-color: #0271bc;;
   justify-content: space-between;
   align-items: center;
   color: $textColor;
@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    color: $titleColor;
 
     @media all and(min-width:768px) {
       display: flex;
@@ -53,10 +54,10 @@
     }
 
     &__networks {
-      padding: 3rem 0rem;
+      padding: 4.5rem 0rem;
 
       @media all and(min-width:768px) {
-        order: 1;
+        order: 3;
         padding: 0;
         width: 21rem;
       }
@@ -67,7 +68,7 @@
 
       @media all and(min-width:768px) {
         width: 21rem;
-        order: 3;
+        order: 1;
 
       }
 
@@ -92,4 +93,10 @@
       }
     }
   }
+}
+
+.footer__links a{
+  color: $titleColor;
+
+
 }
